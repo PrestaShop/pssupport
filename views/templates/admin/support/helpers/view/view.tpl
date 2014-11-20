@@ -66,16 +66,6 @@
 			<br/>{l s='To get you started we give you 10 support tickets for free!'} 
 			<br/>{l s='Open a ticket to ask a question, and our team will get back to you. Remember, it is a question per ticket.'}</p>
 			<button type="button" class="btn btn-default" href="http://addons.prestashop.com/en/388-support">Open a support ticket</button>
-			
-			<br/>
-			<br/>
-			<br/>
-			<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
-
-			<ol>
-			   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-			   <li>Aliquam tincidunt mauris eu risus.</li>
-			</ol>
 
 		</div>
 	</div>
