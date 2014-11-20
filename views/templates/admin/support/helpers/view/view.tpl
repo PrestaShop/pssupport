@@ -29,6 +29,57 @@
 
 <div class="row">
 
+	<div class="col-xs-12 col-sm-6 col-lg-8">
+		<div class="panel">
+
+			<h3><i class="icon-life-bouy"></i> {l s='PrestaShop Support'}</h3>
+
+			<h2>{l s='Get help with PrestaShop'}</h2>
+			<br/>	
+			<p>{l s='Having trouble with your shop? Follow these steps to find your answer:'}</p>
+
+			<ol>
+			   <li>{l s='Read the Documentation'}</li>
+			   <li>{l s='Search the Forum'}</li>
+			   <li>{l s='or Open a Support ticket'}</li>
+			</ol>
+			<br/>
+			<h4><i class="icon-arrow-right"></i> {l s='Have you checked the Documentation?'}</h4>
+			<p>{l s='The User Guide is here to help you get familiar with PrestaShop and how to manage your shop. 
+			Whenever you have a question about a specific feature, you can click on the “Help” icon at the top-right corner of the page. It will open the relevant User Guide’s page: the answer might be there.'}
+			<br/>{l s='You can also browse our User FAQ.'}</p>
+			<button type="button" class="btn btn-default" href="http://doc.prestashop.com/display/PS16/User+Guide">Read the User Guide</button><button type="button" class="btn btn-default" href="http://doc.prestashop.com/display/PS16/FAQ">Go to the User FAQ</button>
+			<br/>
+			<br/>
+			<br/>
+			
+			<h4><i class="icon-arrow-right"></i> {l s='...searched the Forum?'}</h4>
+			<p>{l s='Our Forum is the meeting point of PrestaShop community. Newcomers and expert users exchange tips and help in 15+ languages. If you have a problem, maybe you are not the first one to have dealt with it and you will find the answer on the forum.'} 
+			<br/>{l s='Don’t hesitate to register (by providing a username) and use the search bar to see what others have to say about your problem. If nobody asked the question before, you can create a new conversation.'}</p>
+			<button type="button" class="btn btn-default" href="http://www.prestashop.com/forums/">Search the Forum</button>
+			<br/>
+			<br/>
+			<br/>
+			
+			<h4><i class="icon-arrow-right"></i> {l s='Still at loss with a major issue?'}</h4>
+			<p>{l s='Sign up for a professional support plan. Our PrestaShop experts will provide customized advice and technical assistance.'} 
+			<br/>{l s='To get you started we give you 10 support tickets for free!'} 
+			<br/>{l s='Open a ticket to ask a question, and our team will get back to you. Remember, it is a question per ticket.'}</p>
+			<button type="button" class="btn btn-default" href="http://addons.prestashop.com/en/388-support">Open a support ticket</button>
+			
+			<br/>
+			<br/>
+			<br/>
+			<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+
+			<ol>
+			   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+			   <li>Aliquam tincidunt mauris eu risus.</li>
+			</ol>
+
+		</div>
+	</div>
+
 	<div class="col-xs-12 col-sm-6 col-lg-4">
 		<div class="panel">
 
@@ -37,36 +88,17 @@
 			<div class="list-group">
 				<a href="http://doc.prestashop.com/display/PS16/PrestaShop+1.6+documentation" class="list-group-item">
 					<h4 class="list-group-item-heading">Documentation</h4>
-					<p class="list-group-item-text">Our team keep the whole documentation up-to-date, to help sell with PrestaShop</p>
+					<p class="list-group-item-text">Get familiar with PrestaShop thanks to the User Guide, written by our team.</p>
 				</a>
 				<a href="http://www.prestashop.com/forums/" class="list-group-item">
 					<h4 class="list-group-item-heading">Forum</h4>
-					<p class="list-group-item-text">With 700 000 registered members, our forum is the hub of the PrestaShop Comunity</p>
+					<p class="list-group-item-text">Our forum is the place to meet the PrestaShop Community and its 700,000 members.</p>
 				</a>
 				<a href="TODO" class="list-group-item">
 					<h4 class="list-group-item-heading">Support</h4>
-					<p class="list-group-item-text">If you can't find what you are looking for and you need help, you can contact our support team</p>
+					<p class="list-group-item-text">Sign up for a support plan to get professional help from our team.</p>
 				</a>
 			</div>
-
-		</div>
-	</div>
-
-	<div class="col-xs-12 col-sm-6 col-lg-8">
-		<div class="panel">
-
-			<h3><i class="icon-book"></i> {l s='PrestaShop helps you'}</h3>
-
-			<h2>TEXTE A DEFINIR</h2>
-
-			<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
-
-			<ol>
-			   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-			   <li>Aliquam tincidunt mauris eu risus.</li>
-			</ol>
-
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
 
 		</div>
 	</div>
