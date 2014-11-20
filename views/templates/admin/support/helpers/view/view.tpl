@@ -44,7 +44,7 @@
 			   <li>{l s='or Open a Support ticket'}</li>
 			</ol>
 			<br/>
-			<h4><i class="icon-arrow-right"></i> {l s='Have you checked the Documentation?'}</h4>
+			<h4><i class="icon-arrow-right"></i> {l s='Have you checked the Documentation?' mod='pssupport'}</h4>
 			<p>{l s='The User Guide is here to help you get familiar with PrestaShop and how to manage your shop. 
 			Whenever you have a question about a specific feature, you can click on the “Help” icon at the top-right corner of the page. It will open the relevant User Guide’s page: the answer might be there.'}
 			<br/>{l s='You can also browse our User FAQ.'}</p>
