@@ -39,6 +39,7 @@ class Pssupport extends Module
 		$this->author = 'PrestaShop';
 		$this->need_instance = 0;
 		$this->is_configurable = 0;
+		$this->module_key = '1ccb40707dbedc3d2097fdff60662461';
 
 		$this->bootstrap = true;
 
