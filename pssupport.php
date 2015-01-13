@@ -1,6 +1,6 @@
 <?php
 /**
-* 2007-2014 PrestaShop
+* 2007-2015 PrestaShop
 *
 * NOTICE OF LICENSE
 *
@@ -19,7 +19,7 @@
 * needs please refer to http://www.prestashop.com for more information.
 *
 *  @author    PrestaShop SA <contact@prestashop.com>
-*  @copyright 2007-2014 PrestaShop SA
+*  @copyright 2007-2015 PrestaShop SA
 *  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 */
@@ -55,26 +55,28 @@ class Pssupport extends Module
 
 	public function install()
 	{
-		return 	parent::install()
-				&& $this->installTab()
-				&& $this->registerHook('backOfficeHeader');
+		return parent::install()
+			&& $this->installTab()
+			&& $this->registerHook('backOfficeHeader');
 	}
 
 	public function uninstall()
 	{
-		return 	parent::uninstall()
-				&& $this->uninstallTab()
-				&& $this->unregisterHook('backOfficeHeader');
+		return parent::uninstall()
+			&& $this->uninstallTab()
+			&& $this->unregisterHook('backOfficeHeader');
 	}
 
 	public function installTab()
 	{
 		$tab = new Tab();
 		$tab->active = 1;
-		$tab->class_name = "AdminSupport";
+		$tab->class_name = 'AdminSupport';
 		$tab->name = array();
+
 		foreach (Language::getLanguages(true) as $lang)
-			$tab->name[$lang['id_lang']] = "Support";
+			$tab->name[$lang['id_lang']] = 'Support';
+
 		$tab->id_parent = 0;
 		$tab->module = $this->name;
 		return $tab->add();
@@ -83,6 +85,7 @@ class Pssupport extends Module
 	public function uninstallTab()
 	{
 		$id_tab = (int)Tab::getIdFromClassName('AdminSupport');
+
 		if ($id_tab)
 		{
 			$tab = new Tab($id_tab);
