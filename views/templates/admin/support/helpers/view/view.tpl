@@ -76,7 +76,7 @@
 			</div>
 			<div class="panel-footer" style="height:50px">
 				<div class="col-xs-2">
-				<a class="btn btn-default btn-block" href="https://www.prestashop.com/cloud/en/support?init=ask">{l s='Open a support ticket' mod='pssupport'}</a>
+				<a class="btn btn-default btn-block" href="https://www.prestashop.com/cloud/support?init=ask">{l s='Open a support ticket' mod='pssupport'}</a>
 				</div>
 			</div>
 		</div>
@@ -96,7 +96,7 @@
 					<h4 class="list-group-item-heading">{l s='Forum' mod='pssupport'}</h4>
 					<p class="list-group-item-text">{l s='Our forum is the place to meet the PrestaShop Community and its 700,000 members.' mod='pssupport'}</p>
 				</a>
-				<a href="https://www.prestashop.com/cloud/en/support?init=ask" class="list-group-item">
+				<a href="https://www.prestashop.com/cloud/support?init=ask" class="list-group-item">
 					<h4 class="list-group-item-heading">{l s='Support' mod='pssupport'}</h4>
 					<p class="list-group-item-text">{l s='Sign up for a support plan to get professional help from our team.' mod='pssupport'}</p>
 				</a>
