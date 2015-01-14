@@ -35,7 +35,7 @@ class Pssupport extends Module
 	{
 		$this->name = 'pssupport';
 		$this->tab = 'others';
-		$this->version = '1.0.1';
+		$this->version = '1.0.2';
 		$this->author = 'PrestaShop';
 		$this->need_instance = 0;
 		$this->is_configurable = 0;
@@ -72,6 +72,7 @@ class Pssupport extends Module
 		$tab = new Tab();
 		$tab->active = 1;
 		$tab->class_name = 'AdminSupport';
+		$tab->module = $this->name;
 		$tab->name = array();
 
 		foreach (Language::getLanguages(true) as $lang)
