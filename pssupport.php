@@ -35,7 +35,7 @@ class Pssupport extends Module
 	{
 		$this->name = 'pssupport';
 		$this->tab = 'others';
-		$this->version = '1.0.0';
+		$this->version = '1.0.1';
 		$this->author = 'PrestaShop';
 		$this->need_instance = 0;
 		$this->is_configurable = 0;
@@ -57,14 +57,14 @@ class Pssupport extends Module
 	{
 		return parent::install()
 			&& $this->installTab()
-			&& $this->registerHook('backOfficeHeader');
+			&& $this->registerHook('displayBackOfficeHeader');
 	}
 
 	public function uninstall()
 	{
 		return parent::uninstall()
 			&& $this->uninstallTab()
-			&& $this->unregisterHook('backOfficeHeader');
+			&& $this->unregisterHook('displayBackOfficeHeader');
 	}
 
 	public function installTab()
@@ -95,8 +95,11 @@ class Pssupport extends Module
 			return false;
 	}
 
-	public function hookBackOfficeHeader()
+	public function hookDisplayBackOfficeHeader()
 	{
-		$this->context->controller->addCSS($this->_path.'css/admin.css');
+		if (!$this->active)
+			return;
+
+		$this->context->controller->addCSS($this->_path.'css/pssupport.css');
 	}
 }
