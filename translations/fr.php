@@ -1,0 +1,34 @@
+<?php
+
+global $_MODULE;
+$_MODULE = array();
+$_MODULE['<{pssupport}prestashop>pssupport_edd74c5d07849c5fced2aedb0dcb17e8'] = 'Support PrestaShop';
+$_MODULE['<{pssupport}prestashop>pssupport_4b7ecb2b824aa87e869b9fe4a744111e'] = 'Obtenez de l\'aide pour votre boutique: support, forum, FAQ';
+$_MODULE['<{pssupport}prestashop>pssupport_ff2bd11f9b9f54e7ec5a4acd6c6ee496'] = 'Êtes-vous sûr de vouloir installer ce module ?';
+$_MODULE['<{pssupport}prestashop>adminsupportcontroller_627392b0e94c8094a4e4eefc0f9a8012'] = 'PrestaShop vous aide';
+$_MODULE['<{pssupport}prestashop>view_627392b0e94c8094a4e4eefc0f9a8012'] = 'PrestaShop vous accompagne';
+$_MODULE['<{pssupport}prestashop>view_9776006b34afea9ad637ceba76ab970a'] = 'Vous avez besoin d\'aide avec votre boutique ? Suivez ces quelques étapes pour trouver la solution :';
+$_MODULE['<{pssupport}prestashop>view_b0ad627d88e7ded8e1f8fa535dd04bde'] = 'Lisez la Documentation';
+$_MODULE['<{pssupport}prestashop>view_ae02e0411f4e40bb5b6e4983a4a276b3'] = 'Cherchez sur le Forum';
+$_MODULE['<{pssupport}prestashop>view_69cb6004389bef83378c867fbced5233'] = 'ou Ouvrez un ticket de Support';
+$_MODULE['<{pssupport}prestashop>view_86eb247460340d341c12f07e02e13c5c'] = 'Avez-vous pensé à la documentation ?';
+$_MODULE['<{pssupport}prestashop>view_268c3b4016db1c5dc9bc09cf3fa21fe6'] = 'Le Guide de l’utilisateur vous accompagne dans votre découverte de PrestaShop.';
+$_MODULE['<{pssupport}prestashop>view_38887c3543840f81af4b746c5b17d824'] = 'Lorsque vous avez une interrogation sur une fonctionnalité, vous pouvez cliquer sur l’icône Aide, en haut à droite de la page. Elle ouvrira la page correspondante du Guide de l’utilisateur : la réponse à votre question s’y trouvera sûrement.';
+$_MODULE['<{pssupport}prestashop>view_958eee7a1270ab5cfb9ace3127a6d56e'] = 'Vous pouvez aussi consulter les Questions fréquentes.';
+$_MODULE['<{pssupport}prestashop>view_ffab55e7063490cd5fd5fa3996f5a346'] = 'Lire le Guide de l\'Utilisateur';
+$_MODULE['<{pssupport}prestashop>view_35ec0b7c2effda1f47fbce2c1272494f'] = 'Voir les Questions fréquentes';
+$_MODULE['<{pssupport}prestashop>view_f30a6b4fe15309d3f3edfbdf480abb8e'] = '... parcouru le Forum ?';
+$_MODULE['<{pssupport}prestashop>view_c0e515385363d5ed812c5cf20203c0b7'] = 'Notre forum est le point de rencontre de la communauté PrestaShop. Les nouveaux utilisateurs et les experts s\'échangent des astuces et s\'entraident dans plus de 15 langues. Si vous avez un problème, peut-être n\'êtes vous pas le premier à le rencontrer et que vous trouverez la solution sur le forum.';
+$_MODULE['<{pssupport}prestashop>view_56b8feffb64dafc015ce778ec2fbbfac'] = 'N\'hésitez pas à vous inscrire (en fournissant un nom d\'utilisateur) et utiliser la barre de recherche pour voir ce que les autres ont à dire sur le sujet. Si personne n\'a posé la question avant vous, vous pouvez créer une nouvelle conversation.';
+$_MODULE['<{pssupport}prestashop>view_39c7c643056e821e27e57098dd593ad7'] = 'Vous êtes toujours perdu ?';
+$_MODULE['<{pssupport}prestashop>view_4dda934a70d1374a0cce75864e03f5a1'] = 'Choisissez un plan de support professionnel. Nos experts PrestaShop vous accompagneront avec des conseils personnalisés et une assistance technique.';
+$_MODULE['<{pssupport}prestashop>view_d49cac06b48610a3d7e0b2e8fa8244a6'] = 'Pour vos débuts, nous vous offrons 10 tickets de support utilisateur gratuits !';
+$_MODULE['<{pssupport}prestashop>view_fab781b6d7a9d5a0955f73e4cf2b9c54'] = 'Ouvrez un ticket pour poser votre question, et notre équipe reviendra vers vous. N\'oubliez pas, une question par ticket !';
+$_MODULE['<{pssupport}prestashop>view_a10380f5420c556df03fff92d8ca2846'] = 'Ouvrir un ticket support';
+$_MODULE['<{pssupport}prestashop>view_e9be76a44ba1c2521b80bc4a126e017a'] = 'Liens utiles';
+$_MODULE['<{pssupport}prestashop>view_5b6cf869265c13af8566f192b4ab3d2a'] = 'Documentation';
+$_MODULE['<{pssupport}prestashop>view_ffc96eedd925c5a4c4cc6630c426c237'] = 'Faites connaissance avec PrestaShop grâce au Guide de l\'utilisateur, écrit par notre équipe.';
+$_MODULE['<{pssupport}prestashop>view_e6a7f8a2f42cc35979973da8dfb10720'] = 'Forum';
+$_MODULE['<{pssupport}prestashop>view_5c4563662b070621b734237943469994'] = 'Le forum est au cœur de notre communauté et de ses 700 000 membres.';
+$_MODULE['<{pssupport}prestashop>view_db5eb84117d06047c97c9a0191b5fffe'] = 'Support';
+$_MODULE['<{pssupport}prestashop>view_17a665eb85805b9a511707492e950f32'] = 'Choisissez un plan de support et bénéficiez de l\'aide de notre équipe de professionnels.';
