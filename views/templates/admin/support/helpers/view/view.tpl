@@ -44,8 +44,7 @@
 		<div class="panel">
 			<div class="panel-body">
 				<h3><i class="icon-book"></i> {l s='Have you checked the Documentation?' mod='pssupport'}</h3>
-				<p>{l s='The User Guide is here to help you get familiar with PrestaShop and how to manage your shop.
-				Whenever you have a question about a specific feature, you can click on the “Help” icon at the top-right corner of the page. It will open the relevant User Guide’s page: the answer might be there.' mod='pssupport'}
+				<p>{l s='The User Guide is here to help you get familiar with your PrestaShop.' mod='pssupport'}<br>{l s='Whenever you have a question about a specific feature, you can click on the "Help" icon at the top-right corner of the page. It will open the relevant User Guide\'s page: the answer might be there.' mod='pssupport'}
 				<br/>{l s='You can also browse our User FAQ.' mod='pssupport'}</p>
 			</div>
 			<div class="panel-footer" style="height:50px">
