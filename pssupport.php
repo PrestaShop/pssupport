@@ -69,18 +69,28 @@ class Pssupport extends Module
 
 	public function installTab()
 	{
-		$tab = new Tab();
-		$tab->active = 1;
-		$tab->class_name = 'AdminSupport';
-		$tab->module = $this->name;
-		$tab->name = array();
+        $return = true;
 
-		foreach (Language::getLanguages(true) as $lang)
-			$tab->name[$lang['id_lang']] = 'Support';
+		$sql = 'INSERT INTO `'._DB_PREFIX_.'tab`
+                    (`id_parent`, `class_name`, `module`, `position`, `active`, `hide_host_mode`)
+                    VALUES (0, \'AdminSupport\', \''.$this->name.'\', 99, 1, 0)';
 
-		$tab->id_parent = 0;
-		$tab->module = $this->name;
-		return $tab->add();
+        $return &= Db::getInstance()->execute($sql);
+        if (!$return)
+            return false;
+
+        $id_tab = (int)Db::getInstance()->getValue('SELECT `id_tab` FROM `'._DB_PREFIX_.'tab` WHERE `class_name` = \'AdminSupport\'');
+        if ($id_tab <= 0)
+            return false;
+
+        foreach (Language::getLanguages(true) as $lang)
+        {
+            $sql = 'INSERT INTO `'._DB_PREFIX_.'tab_lang` (`id_tab`, `id_lang`, `name`)
+                    VALUES ('.$id_tab.', '.$lang['id_lang'].', \'Support\')';
+            $return &= Db::getInstance()->execute($sql);
+        }
+
+        return $return;
 	}
 
 	public function uninstallTab()
