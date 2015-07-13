@@ -24,93 +24,86 @@
 *  International Registered Trademark & Property of PrestaShop SA
 */
 
-if (!defined('_PS_VERSION_'))
-	exit;
+if (!defined('_PS_VERSION_')) {
+    exit;
+}
 
 class Pssupport extends Module
 {
-	protected $config_form = false;
+    protected $config_form = false;
 
-	public function __construct()
-	{
-		$this->name = 'pssupport';
-		$this->tab = 'others';
-		$this->version = '1.0.3';
-		$this->author = 'PrestaShop';
-		$this->need_instance = 0;
-		$this->is_configurable = 0;
-		$this->module_key = '1ccb40707dbedc3d2097fdff60662461';
+    public function __construct()
+    {
+        $this->name = 'pssupport';
+        $this->tab = 'others';
+        $this->version = '1.0.3';
+        $this->author = 'PrestaShop';
+        $this->need_instance = 0;
+        $this->is_configurable = 0;
+        $this->module_key = '1ccb40707dbedc3d2097fdff60662461';
 
-		$this->bootstrap = true;
+        $this->bootstrap = true;
 
-		parent::__construct();
+        parent::__construct();
 
-		$this->displayName = $this->l('PrestaShop Support');
-		$this->description = $this->l('Get help for your PrestaShop: support, forum, FAQ...');
+        $this->displayName = $this->l('PrestaShop Support');
+        $this->description = $this->l('Get help for your PrestaShop: support, forum, FAQ...');
 
-		$this->confirmUninstall = $this->l('Are you sure you want to uninstall this module ?');
+        $this->confirmUninstall = $this->l('Are you sure you want to uninstall this module ?');
 
-		$this->ps_versions_compliancy = array('min' => '1.6', 'max' => _PS_VERSION_);
-	}
+        $this->ps_versions_compliancy = array('min' => '1.6', 'max' => _PS_VERSION_);
+    }
 
-	public function install()
-	{
-		return parent::install()
-			&& $this->installTab()
-			&& $this->registerHook('displayBackOfficeHeader');
-	}
+    public function install()
+    {
+        return parent::install()
+            && $this->installTab()
+            && $this->registerHook('displayBackOfficeHeader');
+    }
 
-	public function uninstall()
-	{
-		return parent::uninstall()
-			&& $this->uninstallTab()
-			&& $this->unregisterHook('displayBackOfficeHeader');
-	}
+    public function uninstall()
+    {
+        return parent::uninstall()
+            && $this->uninstallTab()
+            && $this->unregisterHook('displayBackOfficeHeader');
+    }
 
-	public function installTab()
-	{
-        $return = true;
+    public function installTab()
+    {
+        $tab = new Tab();
+        $tab->name[(int)$this->context->language->id] = 'Support';
+        $tab->class_name = 'AdminSupport';
+        $tab->id_parent = (int)0;
+        $tab->module = $this->name;
+        $tab->position = 99;
+        $tab->active = 1;
+        $tab->hide_host_mode = 0;
 
-		$sql = 'INSERT INTO `'._DB_PREFIX_.'tab`
-                    (`id_parent`, `class_name`, `module`, `position`, `active`, `hide_host_mode`)
-                    VALUES (0, \'AdminSupport\', \''.$this->name.'\', 99, 1, 0)';
-
-        $return &= Db::getInstance()->execute($sql);
-        if (!$return)
+        if (!$tab->add()) {
             return false;
-
-        $id_tab = (int)Db::getInstance()->getValue('SELECT `id_tab` FROM `'._DB_PREFIX_.'tab` WHERE `class_name` = \'AdminSupport\'');
-        if ($id_tab <= 0)
-            return false;
-
-        foreach (Language::getLanguages(true) as $lang)
-        {
-            $sql = 'INSERT INTO `'._DB_PREFIX_.'tab_lang` (`id_tab`, `id_lang`, `name`)
-                    VALUES ('.$id_tab.', '.$lang['id_lang'].', \'Support\')';
-            $return &= Db::getInstance()->execute($sql);
         }
 
-        return $return;
-	}
+        return true;
+    }
 
-	public function uninstallTab()
-	{
-		$id_tab = (int)Tab::getIdFromClassName('AdminSupport');
+    public function uninstallTab()
+    {
+        $id_tab = (int)Tab::getIdFromClassName('AdminSupport');
 
-		if ($id_tab)
-		{
-			$tab = new Tab($id_tab);
-			return $tab->delete();
-		}
-		else
-			return false;
-	}
+        if ((int)$id_tab) {
+            $tab = new Tab((int)$id_tab);
+            return $tab->delete();
+        } else {
+            return false;
+        }
+    }
 
-	public function hookDisplayBackOfficeHeader()
-	{
-		if (!$this->active)
-			return;
+    public function hookDisplayBackOfficeHeader()
+    {
+        if (!$this->active) {
+            return;
+        }
 
-		$this->context->controller->addCSS($this->_path.'css/pssupport.css');
-	}
+        $this->context->controller->addCSS($this->_path.'css/pssupport.css');
+    }
 }
