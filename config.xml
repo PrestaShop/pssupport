@@ -2,7 +2,7 @@
 <module>
 	<name>pssupport</name>
 	<displayName><![CDATA[PrestaShop Support]]></displayName>
-	<version><![CDATA[1.0.3]]></version>
+	<version><![CDATA[1.0.4]]></version>
 	<description><![CDATA[Get help for your PrestaShop: support, forum, FAQ...]]></description>
 	<author><![CDATA[PrestaShop]]></author>
 	<tab><![CDATA[others]]></tab>

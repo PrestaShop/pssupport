@@ -35,7 +35,7 @@ class Pssupport extends Module
 	{
 		$this->name = 'pssupport';
 		$this->tab = 'others';
-		$this->version = '1.0.3';
+		$this->version = '1.0.4';
 		$this->author = 'PrestaShop';
 		$this->need_instance = 0;
 		$this->is_configurable = 0;
